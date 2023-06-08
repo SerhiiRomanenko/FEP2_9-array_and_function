@@ -26,10 +26,14 @@ function createArray() {
         });
         let sortedArray = arrOfNumbers.concat(arrOfStrings);               // об'єднуємо відсортовані масиви зі строк та цифр в один масив
         console.log(sortedArray);
+        if (sortedArray.length < 5) {
+            console.log("Ви ввели короткий масив =( Введіть більше 5 елементів...")
+        } else {
+            sortedArray.splice(2,3);                                   //   видаляємо елементи з масиву з 2 ІНДЕКСУ(!) по 4 (включно)
+            console.log(sortedArray);
+            console.log(`Після видалення трьох елементів, кількість елементів в масиві стала = ${sortedArray.length}`)
+        }
 
-        sortedArray.splice(2,3);                                   //   видаляємо елементи з масиву з 2 ІНДЕКСУ(!) по 4 (включно)
-        console.log(sortedArray);
-        console.log(`Після видалення трьох елементів, кількість елементів в масиві стала = ${sortedArray.length}`)
     }
 }
 createArray();
