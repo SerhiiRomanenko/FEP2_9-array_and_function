@@ -7,7 +7,7 @@ function createArray() {
         return str.trim() === "";
     }
 
-    let arrayInString = prompt(`Введіть через пробіл елементи масиву (напр: 1 2 "hello" "javascript")`);    // вводимо елементи масиву
+    let arrayInString = prompt(`Введіть через пробіл елементи масиву (напр: 1 2 hello javascript)`);    // вводимо елементи масиву
     if (arrayInString === null) {                                            // перевірка чи натиснув "Скасувати"
         alert("Шкода що Ви відмовилися =(")
     } else if (isEmpty(arrayInString)) {                                    // перевірка чи пусте значення
